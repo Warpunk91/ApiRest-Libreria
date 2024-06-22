@@ -36,14 +36,14 @@ app.get("/api", (req, res) => {
   });
 
 
-app.use((req, res, next)=> {
+/*app.use((req, res, next)=> {
   const authToken = req.headers["authorization"];
   if(authToken ==="miTokenSecreto123"){
     next();
   }else{
     res.status(401).send("Acceso no autorizado");
   }
-})
+})*/
 
 
 //Ruta para crear nuevo libro
